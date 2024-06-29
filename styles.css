@@ -1,0 +1,116 @@
+body {
+    background: linear-gradient(to bottom right, #4facfe, #00f2fe, #007bff); /* Gradient background */
+    margin: 0;
+    padding: 0;
+    }
+    
+    .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #4facfe, #00f2fe, #007bff ); /* Gradient background */
+    border-radius: 8px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    }
+
+    h3 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    h1 {
+    text-align: center;
+    color: #333;
+    font-family: "Playwrite MX", cursive ;
+    }
+    
+   form {
+    display: flex;
+    flex-direction: column;
+    background-color: #181212;
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 8px; /* Match container border-radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Match container box-shadow */
+   }
+    input, textarea, button {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #11e0ad;
+    border-radius: 4px;
+    font-size: 16px;
+    }
+   
+    img {
+
+        width: 300px;
+            border-radius: 40px;
+            height: 300px;
+        }
+
+        button {
+            background: linear-gradient(to bottom right, #4facfe, #00f2fe, #007bff);
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+        
+        button:hover {
+            background: linear-gradient(to bottom right, #4facfe, #00f2fe, #007bff);
+            color: #fff;
+        }
+        
+p {
+    font-family: "Playwrite MX", cursive ;
+    font-size: 20px;
+}
+    
+.balloon-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow clicks to pass through */
+}
+
+.balloon-wrapper {
+    position: absolute;
+    bottom: -100px; /* Start below the bottom of the screen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: floatUp 10s linear infinite; /* Float up animation */
+    z-index: -1; /* Behind other content */
+}
+
+.balloon {
+    width: 50px;
+    height: 70px;
+    background-color: gold; /* Golden balloon color */
+    border-radius: 50% 50% 50% 50%;
+}
+
+.string {
+    width: 2px;
+    height: 100px;
+    background-color: #000;
+    margin-top: -10px;
+}
+
+@keyframes floatUp {
+    0% {
+        bottom: -100px;
+        opacity: 1;
+    }
+    100% {
+        bottom: 100%;
+        opacity: 0;
+    }
+}
