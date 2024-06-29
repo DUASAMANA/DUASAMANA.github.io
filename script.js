@@ -71,7 +71,7 @@ return wishElement;
 fetchWishes();
 
 
-// balloons code
+// balloons code 
 
 const maxBalloons = 10; // Maximum number of balloons on the screen
 const balloonInterval = 3000; // Interval in milliseconds to create balloons
